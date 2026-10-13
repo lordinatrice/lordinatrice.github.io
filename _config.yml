@@ -1,0 +1,30 @@
+title: L’Ordinatrice
+author: Camille Regnault
+description: Lead Ruby on Rails developer & API expert. Clear code, solid APIs, happier teams.
+url: "" # e.g. https://lordinatrice.fr once the domain is set
+baseurl: ""
+locale: en_US
+image: /assets/img/og-image.png
+twitter:
+  card: summary_large_image
+
+# Contact form (https://web3forms.com): public access key, safe to commit
+web3forms_access_key: "2e495bfd-0f54-4c2b-aea9-f2ebe6b351c1"
+
+social:
+  linkedin: https://www.linkedin.com/in/lordinatrice/
+  malt: https://www.malt.fr/profile/lordinatrice
+  github: https://github.com/lordinatrice
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

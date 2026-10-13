@@ -1,0 +1,46 @@
+# `original` is the language the testimonial was written in; the other one is a translation.
+- name: Paul M.
+  company: Bump.sh
+  original: fr
+  role:
+    en: Backend engineer
+    fr: Backend engineer
+  text:
+    fr: J’ai été surpris à la fin de son contrat d’avoir oublié que Camille venait en freelance pour une durée donnée, tellement elle s’était investie dans notre produit (pourtant très technique) et au sein de l’équipe. […] Sa connaissance du monde RoR, avec notamment Women on Rails, nous a appris beaucoup sur de nouveaux sujets.
+    en: When her contract ended, I was surprised to realise I had forgotten Camille was a freelancer here for a set period, she was that invested in our (very technical) product and in the team. […] Her knowledge of the Rails world, including Women on Rails, taught us a lot about new topics.
+- name: Vivek S.
+  company: Swish
+  original: en
+  role:
+    en: Direct manager
+    fr: Responsable direct
+  text:
+    en: From day one, she brought sharp problem-solving skills, a deep understanding of Rails conventions, and a proactive attitude that made her a key contributor to our team. […] She was often the one who caught edge cases or suggested improvements during code reviews that the rest of us missed.
+    fr: Dès le premier jour, elle a apporté un vrai sens de la résolution de problèmes, une connaissance approfondie des conventions Rails et une attitude proactive qui en ont fait une contributrice clé de l’équipe. […] C’était souvent elle qui repérait les cas limites ou proposait des améliorations en revue de code que nous avions tous manqués.
+- name: Paul B.
+  company: Bump.sh
+  original: fr
+  role:
+    en: Software engineer
+    fr: Ingénieur logiciel
+  text:
+    fr: Super relationnel et à l’écoute, Camille sait se concentrer sur l’essentiel et n’hésite pas à proposer des améliorations en cours de projet (process et/ou produit). Sa connaissance de Rails et son habitude de travailler en équipe de dev nous ont bien aidés à avancer sur des besoins produit que nous avions délaissés, par manque de ressources et de temps.
+    en: Great people skills and a good listener, Camille knows how to focus on what matters and doesn’t hesitate to suggest improvements mid-project (process and/or product). Her Rails knowledge and experience working in dev teams really helped us move forward on product needs we had set aside for lack of resources and time.
+- name: Matthieu V.
+  company: Wemind
+  original: fr
+  role:
+    en: CTO
+    fr: CTO
+  text:
+    fr: Dès le départ, elle nous a épaulés avec sérieux, compétence et professionnalisme, d’autant plus qu’il s’agissait de la période de confinement, qui a imposé de nouveaux rythmes de travail. Elle a contribué de façon proactive à améliorer nos façons de travailler à distance et à installer une culture efficace pour répondre aux bugs et aux demandes de l’équipe.
+    en: From the start, she supported us with rigour, skill and professionalism, all the more so as it was during the COVID lockdown, which imposed new working rhythms. She proactively helped improve how we worked remotely and build an effective culture for handling bugs and team requests.
+- name: Ahmed M.
+  company: Swish
+  original: fr
+  role:
+    en: Frontend Tech Lead
+    fr: Tech Lead Frontend
+  text:
+    fr: Camille est toujours partante pour faire avancer les projets, avec sérieux, bienveillance et le sourire. Une personne impliquée et positive, qui fait toute la différence dans une équipe.
+    en: Camille is always up for moving projects forward, with rigour, kindness and a smile. A committed, positive person who makes all the difference in a team.

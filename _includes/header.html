@@ -1,0 +1,21 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% if page.page_id == "home" %}{% assign anchor_base = "" %}{% else %}{% assign anchor_base = t.home_url | relative_url %}{% endif %}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ t.home_url | relative_url }}">
+      <span class="logo-tile">{% include logo.html size=40 %}</span>
+      <span class="brand__name">L’Ordinatrice</span>
+    </a>
+    <nav class="site-nav" aria-label="{{ t.nav_aria }}">
+      <ul class="site-nav__list" role="list">
+        {% for section in site.data.nav %}
+        <li><a class="site-nav__link" href="{{ anchor_base }}#{{ section }}">/{{ section }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--small" href="{{ page.alt | relative_url }}" hreflang="{{ t.other }}" lang="{{ t.other }}" aria-label="{{ t.other_aria }}">{{ t.other_label }}</a>
+      <button class="btn btn--small" type="button" data-theme-toggle aria-pressed="false"><span aria-hidden="true">◐</span> {{ t.theme_label }}</button>
+    </div>
+  </div>
+</header>

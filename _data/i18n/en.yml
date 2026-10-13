@@ -1,0 +1,45 @@
+code: en
+name: English
+other: fr
+other_label: FR
+other_aria: "FR, passer en français"
+home_url: /
+contact_url: /contact/
+legal_url: /legal/
+skip: Skip to content
+nav_aria: Sections
+theme_label: Dark mode
+role: Lead Ruby on Rails developer & API expert
+tagline: Clear code, solid APIs, happier teams.
+pitch: 7 years of Rails, from scale-ups to French government services. I help teams ship solid APIs and codebases that age well, and bring AI into how they work without trading away quality.
+photo_alt: Camille Regnault speaking at a conference
+try_it: "Try an endpoint:"
+services_title: What I do for you
+principles_title: How I work
+experiences_title: Experience
+now: now
+before_code: A master’s in languages and international finance, time in Luxembourg and Dublin, Russian studies in Saint Petersburg, marketing, consulting and translation. That’s where my product and business sense comes from.
+testimonials_title: They say it better than I do
+testimonials_pick: Pick a testimonial
+previous: Previous testimonial
+next: Next testimonial
+translated: Translated from French
+writing_title: Writing & sharing
+contact_title: A project, an audit, a team to reinforce?
+contact_text: "Drop me a line: I reply fast, and I’ll tell you honestly whether I’m the right person for the job."
+say_hello: Say hello
+elsewhere: Or find me on
+back: ← Back
+contact_page_title: Let’s talk about your project
+contact_page_intro: A Rails project, an API to design, an audit, a team to reinforce or to bring up to speed with AI? Tell me a bit more and I’ll get back to you quickly.
+required_note: "* Required fields"
+field_name: Name
+field_email: Email
+field_topic: Topic
+field_message: Message
+topics: [Technical lead, Consulting or audit, AI-assisted development, Staffing, Other]
+send: Send message
+sending: Sending…
+sent: Thanks! Your message is on its way, I’ll get back to you soon.
+error: "The message couldn’t be sent. Please try again in a moment, or reach me on LinkedIn."
+legal: Legal notice

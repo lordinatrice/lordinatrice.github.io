@@ -1,0 +1,21 @@
+- key: teamwork
+  title:
+    en: Teamwork
+    fr: Le travail d’équipe
+  text:
+    en: My article on Conventional Comments was adopted by teams at Datadog, Dataiku, Bump.sh, KissKissBankBank and DINUM. Good code reviews come with a smile(y).
+    fr: Mon article sur les Conventional Comments a été adopté par les équipes de Datadog, Dataiku, Bump.sh, KissKissBankBank et de la DINUM. Une bonne revue de code, ça se fait avec le smile(y).
+- key: quality
+  title:
+    en: Quality
+    fr: La qualité
+  text:
+    en: TDD, clean code, continuous delivery. Code people want to build on, not work around.
+    fr: TDD, clean code, livraison continue. Un code qu’on a envie de reprendre, pas de contourner.
+- key: product
+  title:
+    en: Product & business
+    fr: Le produit & le métier
+  text:
+    en: A background in business, languages and finance before code. I speak with lawyers and finance people as easily as with developers.
+    fr: Un parcours business, langues et finance avant le code. Je parle aussi bien aux juristes et aux financiers qu’aux devs.

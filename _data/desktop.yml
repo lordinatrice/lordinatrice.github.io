@@ -1,0 +1,25 @@
+# Icons on the 404 retro desktop. `side` places them left or right of the error window.
+- label: portfolio.html
+  url: /
+  type: doc
+  side: left
+- label: testimonials.zip
+  url: /#testimonials
+  type: zip
+  side: left
+- label: experiences/
+  url: /#experiences
+  type: folder
+  side: left
+- label: contact.txt
+  url: /contact/
+  type: doc
+  side: right
+- label: newsletter.url
+  url: https://womenonrails.substack.com/
+  type: link
+  side: right
+- label: fr/
+  url: /fr/
+  type: folder
+  side: right

@@ -1,0 +1,41 @@
+{% assign t = site.data.i18n[page.lang] %}
+<div class="split split--top contact-page">
+  <div class="stack">
+    <p class="request"><span class="badge badge--post">POST</span> /contact</p>
+    <h1 class="page-title"><mark>{{ t.contact_page_title }}</mark></h1>
+    <p class="muted">{{ t.contact_page_intro }}</p>
+
+    <form class="form stack" action="https://api.web3forms.com/submit" method="POST" data-contact-form
+          data-sending="{{ t.sending }}" data-sent="{{ t.sent }}" data-error="{{ t.error }}">
+      <input type="hidden" name="access_key" value="{{ site.web3forms_access_key }}">
+      <input type="hidden" name="subject" value="New message from {{ site.title }}">
+      <input type="hidden" name="from_name" value="{{ site.title }}">
+      <!-- Honeypot: humans never see it, bots fill it in and get rejected -->
+      <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <p class="small muted">{{ t.required_note }}</p>
+      <label class="field">{{ t.field_name }} *
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label class="field">{{ t.field_email }} *
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label class="field">{{ t.field_topic }}
+        <select name="topic">
+          {% for topic in t.topics %}<option>{{ topic }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">{{ t.field_message }} *
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <p><button class="btn btn--primary btn--mono btn--large" type="submit">{{ t.send }}</button></p>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+
+    <div class="inline-list">
+      <span class="muted">{{ t.elsewhere }}</span>
+      {% include social-links.html %}
+    </div>
+  </div>
+  {% include computer.html %}
+</div>

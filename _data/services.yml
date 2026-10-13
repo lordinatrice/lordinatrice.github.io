@@ -1,0 +1,32 @@
+- method: GET
+  path: /services/lead
+  title:
+    en: Rails & API technical lead
+    fr: Lead technique Rails & API
+  text:
+    en: Architecture, technical decisions, scoping with product and design. Currently lead on Passe Marché (DINUM × French Ministry of Economy).
+    fr: Architecture, décisions techniques, cadrage avec le produit et le design. Aujourd’hui lead de Passe Marché (DINUM × Bercy).
+- method: GET
+  path: /services/audit
+  title:
+    en: Consulting & audits
+    fr: Conseil & audit
+  text:
+    en: Codebase audits, Rails upgrades, Hotwire and ViewComponents, REST and OpenAPI design, code review practices and Shape Up.
+    fr: Audit de codebase, montées de version Rails, Hotwire et ViewComponents, design d’API REST et OpenAPI, revues de code et Shape Up.
+- method: POST
+  path: /services/ai
+  title:
+    en: AI-augmented development
+    fr: Développement augmenté par l’IA
+  text:
+    en: I ship a government product with coding agents every day. I help teams set up AI workflows (scope, plan, execute, review) that speed things up without hurting quality.
+    fr: Je livre un produit de l’État avec des agents de code au quotidien. J’aide les équipes à mettre en place des workflows IA (cadrage, plan, exécution, revue) qui accélèrent sans dégrader la qualité.
+- method: POST
+  path: /services/staffing
+  title:
+    en: Rails staffing
+    fr: Staffing Rails
+  text:
+    en: Need extra hands? I put together a trusted Rails team from my network, and lead it if needed.
+    fr: Besoin de renfort ? Je constitue une équipe Rails de confiance dans mon réseau, et je l’encadre si besoin.

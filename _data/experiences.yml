@@ -1,0 +1,47 @@
+- company: DINUM × Bercy
+  role: Lead Software Engineer
+  start: 07/2025
+  stack: [Rails, DSFR, AI agents]
+  text:
+    en: "Passe Marché: making it simpler for companies to bid on public procurement. Technical decisions, user onboarding, AI-assisted development workflow."
+    fr: "Passe Marché : simplifier la candidature des entreprises aux marchés publics. Décisions techniques, accompagnement des utilisateurs, workflow de dev assisté par IA."
+- company: Swish
+  role: Lead Backend Developer
+  start: 08/2024
+  end: 04/2025
+  stack: [Rails, REST API, RSpec]
+  text:
+    en: "Moved to a headless architecture: split API and front end, led an international team, set craft practices."
+    fr: "Passage à une architecture headless : séparation de l’API et du front, lead d’une équipe internationale, bonnes pratiques de craft."
+- company: Electra
+  role: Backend Developer
+  start: 05/2024
+  end: 06/2024
+  stack: [Rails, SOAP, SAP]
+  text:
+    en: Integrated an external billing and CRM tool with SAP for the finance team.
+    fr: Intégration d’un outil de facturation et CRM externe avec SAP, côté finance.
+- company: Bump.sh
+  role: Software Engineer
+  start: 06/2023
+  end: 04/2024
+  stack: [Rails, Hotwire, OpenAPI]
+  text:
+    en: Automated API documentation and catalog platform.
+    fr: Plateforme de documentation et de catalogue d’APIs automatisés.
+- company: KissKissBankBank
+  role: Software Engineer
+  start: 09/2021
+  end: 01/2023
+  stack: [Rails, GraphQL, TDD]
+  text:
+    en: Main app in TDD, Matrix and Front App APIs, subscriptions, pricing, messaging, data warehouse, alongside the product team.
+    fr: Application principale en TDD, APIs Matrix et Front App, abonnements, pricing, messagerie, data warehouse, avec l’équipe produit.
+- company: Wemind
+  role: Software Engineer
+  start: 11/2019
+  end: 09/2021
+  stack: [Rails, Vue.js, REST]
+  text:
+    en: E-signature (Yousign), internal tools for non-tech teams, full-remote rollout, REST integrations.
+    fr: Signature électronique (Yousign), outils internes pour les équipes non tech, mise en place du full remote, intégrations REST.

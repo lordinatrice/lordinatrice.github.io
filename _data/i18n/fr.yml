@@ -1,0 +1,45 @@
+code: fr
+name: Français
+other: en
+other_label: EN
+other_aria: "EN, switch to English"
+home_url: /fr/
+contact_url: /fr/contact/
+legal_url: /fr/mentions-legales/
+skip: Aller au contenu
+nav_aria: Sections
+theme_label: Mode sombre
+role: Lead développeuse Ruby on Rails & experte API
+tagline: Du code clair, des APIs solides, des équipes plus sereines.
+pitch: 7 ans de Rails, des scale-ups aux services de l’État. J’aide les équipes à livrer des APIs solides et un code qui vieillit bien, et à intégrer l’IA dans leur façon de travailler sans sacrifier la qualité.
+photo_alt: Camille Regnault en conférence
+try_it: "Essayez un endpoint :"
+services_title: Ce que je fais pour vous
+principles_title: Ma façon de travailler
+experiences_title: Parcours
+now: aujourd’hui
+before_code: Master LEA en finance internationale, expériences au Luxembourg et à Dublin, études de russe à Saint-Pétersbourg, marketing, conseil et traduction. C’est de là que vient ma vision produit et métier.
+testimonials_title: Ils en parlent mieux que moi
+testimonials_pick: Choisir un témoignage
+previous: Témoignage précédent
+next: Témoignage suivant
+translated: Traduit de l’anglais
+writing_title: J’écris, je partage
+contact_title: Un projet, un audit, une équipe à renforcer ?
+contact_text: "Écrivez-moi : je réponds vite, et je vous dis franchement si je suis la bonne personne pour votre besoin."
+say_hello: Écrivez-moi
+elsewhere: Ou retrouvez-moi sur
+back: ← Retour
+contact_page_title: Parlons de votre projet
+contact_page_intro: Un projet Rails, une API à concevoir, un audit, une équipe à renforcer ou à faire passer à l’IA ? Dites-m’en un peu plus, je vous réponds très vite.
+required_note: "* Champs obligatoires"
+field_name: Nom
+field_email: Email
+field_topic: Sujet
+field_message: Message
+topics: [Lead technique, Conseil ou audit, Développement avec l’IA, Staffing, Autre]
+send: Envoyer le message
+sending: Envoi en cours…
+sent: Merci ! Votre message est bien parti, je vous réponds très vite.
+error: "Le message n’a pas pu partir. Réessayez dans un instant, ou écrivez-moi sur LinkedIn."
+legal: Mentions légales
