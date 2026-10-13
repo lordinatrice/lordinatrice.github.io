@@ -134,6 +134,7 @@
         {% if item.image %}<img class="card__image" src="{{ item.image | relative_url }}" alt="{{ item.title }}" lang="{{ item.title_lang }}" loading="lazy">{% endif %}
         <span class="card__kind">{{ item.kind }}</span>
         {% unless item.image %}
+        {% if item.logo %}<img class="card__logo" src="{{ item.logo | relative_url }}" alt="" width="124" height="56" loading="lazy">{% endif %}
         <span class="card__title" lang="{{ item.title_lang }}">{{ item.title }}</span>
         <span class="muted">{{ item.text[lang] }}</span>
         {% endunless %}
