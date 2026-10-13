@@ -1,0 +1,58 @@
+// Grid track that never overflows narrow screens. unquote() keeps libsass (GitHub Pages) from evaluating CSS min().
+@function fit($size) { @return unquote("min(100%, #{$size})"); }
+
+// Design tokens. Colours are CSS custom properties so the theme can switch at runtime.
+$yellow: #FFC000;
+$rubis: #B8336A;
+$aubergine: #2A1E2C;
+
+@mixin light-theme {
+  --bg: #FBF6EF;
+  --surface: #FFFDF9;
+  --soft: #FFF1C7;
+  --ink: #{$aubergine};
+  --muted: #5E4E61;
+  --accent: #{$rubis};
+  --on-accent: #FFFFFF;
+  --line: #D9C9CF;
+  --shadow: #{$yellow};
+  --mark: #{$yellow};
+  --get-bg: #BFE8D6;  --get-ink: #1E4D3A;
+  --post-bg: #DCD6F7; --post-ink: #3B2F7A;
+  --stripe: #{$yellow};
+  --desktop: #E8C7CC;
+  color-scheme: light;
+}
+
+@mixin dark-theme {
+  --bg: #1A1220;
+  --surface: #241A2B;
+  --soft: #2F2618;
+  --ink: #F3E8EE;
+  --muted: #BCA9C0;
+  --accent: #FF7EB6;
+  --on-accent: #1A1220;
+  --line: #4A3A52;
+  --shadow: #{$yellow};
+  --mark: #6B5200;
+  --get-bg: #1F3D33;  --get-ink: #7FF5C3;
+  --post-bg: #2E2650; --post-ink: #C9C2F0;
+  --stripe: #{$yellow};
+  --desktop: #3A2632;
+  color-scheme: dark;
+}
+
+:root {
+  @include light-theme;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-pixel: "Silkscreen", var(--font-mono);
+  --radius: 12px;
+  --border: 2px solid var(--ink);
+  --gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-theme; }
+}
+[data-theme="dark"] { @include dark-theme; }

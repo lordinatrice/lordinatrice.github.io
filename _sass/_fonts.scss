@@ -1,0 +1,17 @@
+// Self-hosted fonts (SIL Open Font License, see assets/fonts/OFL-*.txt): no request to a third party.
+@mixin font($family, $file, $weight) {
+  @font-face {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("../fonts/#{$file}-#{$weight}.woff2") format("woff2");
+  }
+}
+
+@include font("IBM Plex Sans", "ibm-plex-sans", 400);
+@include font("IBM Plex Sans", "ibm-plex-sans", 600);
+@include font("IBM Plex Sans", "ibm-plex-sans", 700);
+@include font("IBM Plex Mono", "ibm-plex-mono", 400);
+@include font("IBM Plex Mono", "ibm-plex-mono", 600);
+@include font("Silkscreen", "silkscreen", 400);

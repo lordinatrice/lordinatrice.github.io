@@ -1,0 +1,97 @@
+// Buttons: anything with an offset shadow is clickable, nothing else is.
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 48px; padding: 0 1.25rem;
+  background: var(--surface); color: var(--ink);
+  border: var(--border); border-radius: 10px; box-shadow: 3px 3px 0 var(--shadow);
+  font: 600 1rem var(--font-sans); text-decoration: none; cursor: pointer;
+
+  @media (prefers-reduced-motion: no-preference) { transition: transform .12s ease; }
+  &:hover { transform: translate(-2px, -2px); }
+  &:active { transform: translate(2px, 2px); }
+  &[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+}
+.btn--primary { background: var(--accent); color: var(--on-accent); }
+.btn--mono { font-family: var(--font-mono); }
+.btn--small { min-height: 44px; min-width: 44px; padding: 0 .875rem; font-size: .875rem; box-shadow: 2px 2px 0 var(--shadow); }
+.btn--large { min-height: 52px; padding: 0 1.625rem; font-size: 1.0625rem; }
+.btn--tab { flex-direction: column; align-items: flex-start; gap: 0; padding: .375rem .875rem; text-align: left; font-size: .9375rem;
+  span { font-size: .8125rem; font-weight: 400; }
+}
+
+// HTTP-flavoured labels
+.request { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; font: .875rem var(--font-mono); }
+.badge { padding: .125rem .625rem; border-radius: 6px; font: 600 .8125rem var(--font-mono); }
+.badge--get, .badge--ok { background: var(--get-bg); color: var(--get-ink); }
+.badge--post { background: var(--post-bg); color: var(--post-ink); }
+.badge--warn { background: #FFC000; color: #2A1E2C; }
+
+// Retro window
+.window {
+  background: var(--surface); border: var(--border); border-radius: var(--radius);
+  box-shadow: 6px 6px 0 var(--shadow); overflow: hidden;
+}
+.window__bar {
+  display: flex; align-items: center; gap: .625rem; height: 32px; padding: 0 .625rem;
+  border-bottom: var(--border);
+  background: repeating-linear-gradient(0deg, var(--stripe) 0 2px, var(--surface) 2px 5px);
+}
+.window__dot { width: 14px; height: 14px; border: var(--border); border-radius: 3px; background: var(--surface); }
+.window__title { margin-inline: auto; padding: 0 .625rem; background: var(--surface); font: .8125rem var(--font-pixel); }
+.window__body { padding: clamp(1.5rem, 4vw, 2.75rem); }
+
+// Logo
+.logo-tile {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border: var(--border); border-radius: 10px;
+  background: #B8336A; color: #FFC000;
+}
+.sticker {
+  position: absolute; top: -.5rem; right: -.375rem; z-index: 2;
+  width: 104px; height: 104px; border-radius: 18px;
+  transform: rotate(6deg); box-shadow: 4px 4px 0 var(--ink);
+}
+
+// Cards
+.card {
+  display: flex; flex-direction: column; gap: .625rem; height: 100%; padding: 1.375rem;
+  background: var(--surface); border: var(--border); border-radius: var(--radius);
+}
+.card--soft { background: var(--soft); border-color: transparent; }
+.card--link { text-decoration: none; box-shadow: 4px 4px 0 var(--shadow);
+  @media (prefers-reduced-motion: no-preference) { transition: transform .12s ease; }
+  &:hover { transform: translate(-2px, -2px); }
+  &:hover .card__cta { text-decoration-thickness: 3px; }
+}
+.card--feature { padding: 0; overflow: hidden; gap: 0;
+  .card__kind, .card__cta { padding: .625rem .875rem 0; }
+  .card__cta { padding-bottom: .875rem; }
+}
+.card__image { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-bottom: var(--border); }
+.card__kind { font: .75rem var(--font-pixel); color: var(--accent); }
+.card__title { font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
+.card__cta { margin-top: auto; font-weight: 600; color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: .375rem; margin: .625rem 0 0; padding: 0; list-style: none; }
+.tag { padding: .125rem .5rem; border: 1px solid var(--ink); border-radius: 999px; font: .75rem var(--font-mono); }
+
+// Vintage computer illustration
+.computer { width: 100%; max-width: 300px; justify-self: center; }
+.computer__case { fill: #EDE3D1; stroke: #2A1E2C; stroke-width: 3; }
+.computer__bezel { fill: #D8CBB4; stroke: #2A1E2C; stroke-width: 3; }
+.computer__screen { fill: #B8336A; }
+.computer__logo { stroke: #FFC000; }
+.computer__slot { fill: #2A1E2C; }
+.computer__vents { stroke: #B8A98F; stroke-width: 3; stroke-linecap: round; }
+.computer__keys { stroke: #B8A98F; stroke-width: 5; stroke-dasharray: 9 4; }
+
+// Forms
+.field { display: flex; flex-direction: column; gap: .375rem; font-weight: 600; font-size: .9375rem; }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 48px; padding: .625rem .75rem;
+  font: 1rem var(--font-sans); color: var(--ink); background: var(--bg);
+  border: var(--border); border-radius: 8px;
+}
+.field textarea { min-height: 9rem; resize: vertical; }
+.form__status:empty { display: none; }
+.form__status { padding: 1rem 1.25rem; border-radius: var(--radius); background: var(--soft); font-weight: 600; }

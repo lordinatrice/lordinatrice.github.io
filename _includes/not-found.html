@@ -1,0 +1,18 @@
+{%- comment -%}GitHub Pages serves one 404 for every language, so the message is bilingual.{%- endcomment -%}
+<div class="desktop">
+  {% include desktop-icons.html side="left" %}
+  <div class="window desktop__dialog">
+    {% include window-bar.html title="error.log" dot=true %}
+    <div class="window__body stack">
+      <p class="request"><span class="badge badge--warn">404</span> GET <span data-current-path>/???</span></p>
+      <h1 class="page-title">404 Not Found</h1>
+      <p>This file doesn’t exist, or it moved while I was refactoring.</p>
+      <p lang="fr" class="muted">Ce fichier n’existe pas, ou il a bougé pendant un refactoring.</p>
+      <ul class="inline-list" role="list">
+        <li><a class="btn btn--primary btn--mono" href="{{ '/' | relative_url }}">GET /</a></li>
+        <li><a class="btn" href="{{ '/fr/' | relative_url }}" lang="fr">Retour à l’accueil</a></li>
+      </ul>
+    </div>
+  </div>
+  {% include desktop-icons.html side="right" %}
+</div>

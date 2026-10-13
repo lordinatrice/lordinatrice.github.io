@@ -1,0 +1,34 @@
+- kind: Podcast
+  title: Créer sa carrière idéale dans la tech en suivant ses valeurs
+  title_lang: fr
+  url: https://smartlink.ausha.co/developer-experience/camille-regnault
+  image: /assets/img/podcast-developer-experience.jpg
+  cta:
+    en: Listen to the episode
+    fr: Écouter l’épisode
+- kind: Newsletter
+  title: Women on Rails
+  title_lang: en
+  url: https://womenonrails.substack.com/
+  text:
+    en: Co-author of the monthly Rails and web news newsletter.
+    fr: Co-rédactrice de la newsletter mensuelle sur l’actu Rails et web.
+  cta:
+    en: Read the newsletter
+    fr: Lire la newsletter
+- kind: Article
+  title: "Conventional comments : faire des revues de code avec le smile(y)"
+  title_lang: fr
+  url: https://www.24joursdeweb.fr/2021/conventional-comments-faire-des-revues-de-code-avec-le-smiley
+  text:
+    en: 24 jours de web, 2021 (in French)
+    fr: 24 jours de web, 2021
+  cta:
+    en: Read the article
+    fr: Lire l’article
+- kind: Talks
+  title: Workshops & meetups
+  title_lang: en
+  text:
+    en: 42, Peer-to-Peer Festival, Le Wagon, tech meetups and Slack communities.
+    fr: 42, Peer-to-Peer Festival, Le Wagon, meetups tech et communautés Slack.

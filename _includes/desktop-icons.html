@@ -1,0 +1,10 @@
+<ul class="desktop__icons desktop__icons--{{ include.side }}" role="list">
+  {% for icon in site.data.desktop %}{% if icon.side == include.side %}
+  <li>
+    <a class="desktop-icon" href="{% if icon.url contains '://' %}{{ icon.url }}{% else %}{{ icon.url | relative_url }}{% endif %}">
+      {% include file-icon.html type=icon.type %}
+      <span class="desktop-icon__label">{{ icon.label }}</span>
+    </a>
+  </li>
+  {% endif %}{% endfor %}
+</ul>

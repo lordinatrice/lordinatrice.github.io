@@ -1,0 +1,16 @@
+<svg class="file-icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+{% case include.type %}
+{% when "folder" %}
+  <path class="file-icon__accent" d="M4 12 H18 L22 16 H44 V40 H4 Z"/>
+{% when "zip" %}
+  <path class="file-icon__paper" d="M10 4 H30 L38 12 V44 H10 Z"/>
+  <path class="file-icon__ink" d="M22 6 H26 V9 H22 Z M22 12 H26 V15 H22 Z M22 18 H26 V21 H22 Z M21 24 H27 V30 H21 Z"/>
+{% when "link" %}
+  <path class="file-icon__paper" d="M10 4 H30 L38 12 V44 H10 Z"/>
+  <circle class="file-icon__accent" cx="24" cy="28" r="9"/>
+  <path class="file-icon__line" d="M15 28 H33 M24 19 C19 24 19 32 24 37 M24 19 C29 24 29 32 24 37"/>
+{% else %}
+  <path class="file-icon__paper" d="M10 4 H30 L38 12 V44 H10 Z"/>
+  <path class="file-icon__line" d="M15 20 H33 M15 26 H33 M15 32 H27"/>
+{% endcase %}
+</svg>

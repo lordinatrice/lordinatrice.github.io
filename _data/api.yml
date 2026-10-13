@@ -1,0 +1,75 @@
+# Endpoints of the hero "API explorer". `tone` drives the status badge colour.
+- path: /lordinatrice
+  status: 200 OK
+  tone: ok
+  body:
+    en: |-
+      {
+        "name": "Camille Regnault",
+        "alias": "L’Ordinatrice",
+        "role": "Lead Rails & API",
+        "experience_years": 7,
+        "stack": ["Rails", "Hotwire", "REST", "GraphQL"],
+        "remote": true,
+        "bugs_introduced": 0  // that’s the goal, anyway
+      }
+    fr: |-
+      {
+        "name": "Camille Regnault",
+        "alias": "L’Ordinatrice",
+        "role": "Lead Rails & API",
+        "experience_years": 7,
+        "stack": ["Rails", "Hotwire", "REST", "GraphQL"],
+        "remote": true,
+        "bugs_introduced": 0  // on vise, en tout cas
+      }
+- path: /availability
+  status: 200 OK
+  tone: ok
+  body:
+    en: |-
+      {
+        "status": "case by case",  // let’s talk
+        "formats": ["lead", "audit", "consulting", "staffing"],
+        "remote": true,
+        "avg_response_time": "1h"
+      }
+    fr: |-
+      {
+        "status": "au cas par cas",  // parlons-en
+        "formats": ["lead", "audit", "conseil", "staffing"],
+        "remote": true,
+        "avg_response_time": "1h"
+      }
+- path: /languages
+  status: 200 OK
+  tone: ok
+  body:
+    en: |-
+      {
+        "native": ["fr"],
+        "professional": ["en", "de"],
+        "conversational": ["it", "ru", "pt"],
+        "favourite": "ruby"  // obviously
+      }
+    fr: |-
+      {
+        "native": ["fr"],
+        "professional": ["en", "de"],
+        "conversational": ["it", "ru", "pt"],
+        "favourite": "ruby"  // évidemment
+      }
+- path: /coffee
+  status: 418 I’m a teapot
+  tone: warn
+  body:
+    en: |-
+      {
+        "error": "I’m a teapot",
+        "hint": "Try GET /lordinatrice instead"
+      }
+    fr: |-
+      {
+        "error": "I’m a teapot",
+        "hint": "Essayez plutôt GET /lordinatrice"
+      }

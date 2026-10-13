@@ -1,0 +1,7 @@
+{% assign t = site.data.i18n[page.lang] %}
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__motto" lang="en">“If we spoke a different language, we would perceive a somewhat different world.”</p>
+    <p class="mono">© {{ site.time | date: "%Y" }} {{ site.author }}, L’Ordinatrice · <a href="{{ t.legal_url | relative_url }}">{{ t.legal }}</a></p>
+  </div>
+</footer>

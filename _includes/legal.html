@@ -1,0 +1,27 @@
+{% assign t = site.data.i18n[page.lang] %}
+<div class="prose legal">
+  <h1 class="page-title">{{ t.legal }}</h1>
+{% if page.lang == "fr" %}
+  <h2>Éditeur du site</h2>
+  <p>Camille Regnault, L’Ordinatrice<br>
+  Contact : via la <a href="{{ t.contact_url | relative_url }}">page contact</a><br>
+  Directrice de la publication : Camille Regnault</p>
+  <h2>Hébergement</h2>
+  <p>GitHub Pages, GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+  <h2>Données personnelles</h2>
+  <p>Ce site ne dépose aucun cookie, n’utilise aucun outil de mesure d’audience et héberge lui-même ses polices : aucun service tiers n’est contacté quand vous le consultez. Les messages envoyés via le formulaire de contact sont transmis par le service Web3Forms et servent uniquement à vous répondre. Vous pouvez demander leur suppression à tout moment via la page contact.</p>
+  <h2>Crédits</h2>
+  <p>Visuel du podcast : Developer Experience, par Donatien Léon. Polices IBM Plex et Silkscreen sous licence SIL Open Font License.</p>
+{% else %}
+  <h2>Publisher</h2>
+  <p>Camille Regnault, L’Ordinatrice<br>
+  Contact: through the <a href="{{ t.contact_url | relative_url }}">contact page</a><br>
+  Publication director: Camille Regnault</p>
+  <h2>Hosting</h2>
+  <p>GitHub Pages, GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.</p>
+  <h2>Personal data</h2>
+  <p>This site sets no cookies, uses no analytics and serves its own fonts: no third-party service is contacted while you browse it. Messages sent through the contact form are delivered by the Web3Forms service and are only used to reply to you. You can ask for them to be deleted at any time through the contact page.</p>
+  <h2>Credits</h2>
+  <p>Podcast artwork: Developer Experience, by Donatien Léon. IBM Plex and Silkscreen fonts under the SIL Open Font License.</p>
+{% endif %}
+</div>
