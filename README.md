@@ -1,4 +1,4 @@
-# L’Ordinatrice, portfolio of Camille Regnault
+# L’Ordinatrice, portfolio of Camille R
 
 Static Jekyll site, served by GitHub Pages. Bilingual (EN at `/`, FR at `/fr/`), light/dark theme, accessible (RGAA / WCAG 2.1 AA target).
 
